@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour</title>
+  <!-- boxicon link  -->
+  l
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ruwudu:wght@500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ruwudu', serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+  }
+
+  body {
+    line-height: 1.5s;
+    font-family: 'Ruwudu', serif;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+  }
+
+  /* home section logo container  */
+  #main {
+    width: 100%;
+    height: 100vh;
+
+    /* background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(./images/islam-6531914.jpg); */
+    /* background-size: cover; */
+    /* position: absolute; */
+    /* background-position: center; */
+  }
+
+
+  .btn {
+    border: 2px solid #e1e6e7;
+    display: inline-block;
+    padding: 1rem 7rem;
+    font-size: 19px;
+    margin-top: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #023241;
+    border: none;
+  }
+
+  nav {
+    width: 100%;
+    height: 74px;
+    background-color: #fff;
+    /* opacity: 0.5; */
+    margin-top: -23px;
+    /* background-color: #023241; */
+    line-height: 80px;
+  }
+
+
+
+  nav ul {
+    float: right;
+    margin-right: 40px;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: #000;
+
+
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    opacity: 100%;
+    font-size: 15px;
+    padding: 30px;
+    font-weight: bold;
+
+  }
+
+  nav ul li :hover {
+    background-color: rgb(65, 82, 99);
+  }
+
+  /* section tour home start from here */
+  .tour-home {
+    padding: 70px 17% 60px;
+    height: 50vh;
+  }
+
+  .tour-home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    bottom: 846px;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(to left, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(./images/travel-2081174_1920.jpg);
+  }
+
+  .homepage h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #fff;
+  }
+
+  .homepage h1 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .homepage p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 35px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 13px 40px;
+    background-color: rgb(4 36 62);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .50s ease;
+  }
+
+  .button:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  /* tour home page  section end  */
+
+  .pop-tour {
+
+    padding: 6px 6% 17px;
+    position: relative;
+    /* background: rgba(90, 88, 88, 0.402); */
+    top: -842px;
+  }
+
+  .center-text {
+    text-align: center;
+    margin-top: 23px;
+  }
+
+  .center-text h2 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .pop-tour-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 6rem;
+    margin-top: 5rem;
+  }
+
+  .pop-box {
+    position: relative;
+  }
+
+  .pop-box img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(70%);
+    transition: all .3s cubic-bezier(.499, .05, .55, .95);
+    will-change: filter;
+    display: block;
+  }
+
+  .pop-box h6 {
+    position: absolute;
+    left: 25px;
+    bottom: 95px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+
+  }
+
+  .pop-box h4 {
+    position: absolute;
+    left: 25px;
+    bottom: 65px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+
+  }
+
+  .pop-box img:hover {
+    filter: brightness(90%) hue-rotate(50deg);
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+
+  .center-btn {
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+
+  }
+
+  .btn:hover {
+    background: #000;
+    color: white;
+  }
+
+  /* popular tour section ends */
+
+
+  /* pricing section start  */
+
+  .pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    position: relative;
+    top: 65px;
+  }
+
+  .pricing .box-container .box {
+    text-align: center;
+    border-radius: .5rem;
+    background: transparent white;
+    box-shadow: #023241;
+    padding: 2rem;
+  }
+
+  .pricing .box-container .box h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .pricing .box-container .box .price {
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #000;
+    color: #fff;
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+
+  .pricing .box-container .box .list p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+  }
+
+  .pricing .box-container .box .list p i {
+    padding-right: .5rem;
+    color: #fff;
+  }
+
+  .pricing .heading {
+    color: #fff;
+    font-size: 41px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    top: 20px;
+
+  }
+
+  .pricing {
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(./images/tour);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    top: -691px;
+  }
+
+  /* footer section start */
+
+  .footer {
+    display: grid;
+    position: relative;
+    top: -580px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+  }
+
+  .footer-box {
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    padding: 32px 13px;
+  }
+
+  .footer-box h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+.footer-box p{
+  width: 50%;
+}
+  .footer-box a {
+    color: #000;
+    margin-bottom: 0.8rem;
+    font-size: 19px;
+    font-weight: 400;
+    transition: all .50s ease;
+  }
+
+  .footer-box a:hover {
+    transform: translateX(5px);
+    color: black;
+  }
+  .social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background:  #023241;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: transform 0.6s;
+
+  }
+  social a:hover{
+    transform: translateX(5px);
+    background: #023241;
+    color: #000;
+  }
+  /* copyright section start */
+
+  .copyri8{
+    position: relative;
+    top: -380px;
+    text-align: center;
+    font-weight: 400; 
+  /* background-color: #000;*/
+  color:#000;
+    font-size: 40px;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  text-transform: none;
+  padding: 44px 1px 144px 3px;
+  border-top: 2px dashed rgb(179, 175, 175);
+   margin: 70px; 
+  
+  }
+  .footer-logo{
+    font-size: 1.5rem;
+
+margin-top: -25px;
+min-width: 215px;
+  }
+  .footer-logo img{
+    width: 27%;
+    height: 18vh;
+    position: relative;
+    left: -387px;
+  }
+  .footer-logo p{
+    margin-top: -25px;
+    text-align: center;
+  }
+  
+</style>
+
+<body>
+  <header>
+
+    <div id="main">
+
+      <nav>
+        <img src="logo.png" alt="" width="200" height="95">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visa.html">Visa</a></li>
+          <li><a href="umrah.html">Umrah</a></li>
+          <li><a href="index.html">Tour</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+      </nav>
+  </header>
+  <!-- tour home section start -->
+  <section class="tour-home">
+    <div class="homepage">
+      <h5>Lest's</h5>
+      <h1>Planned our <br> own tour </h1>
+      <p>Naran Kagan, a Nourthern Asian nation made up of thousands of natural affections</p>
+      <a href="#" class="button">Book A trip</a>
+    </div>
+  </section>
+  <!-- popular tour section start -->
+  <section class="pop-tour">
+    <div class="center-text">
+      <h2>Popular Tour</h2>
+    </div>
+    <div class="pop-tour-content">
+      <div class="pop-box">
+        <img src="./images/neelum.jpg" width="500" height="600">
+        <h6>Neelum Valley</h6>
+        <h4>Paradise of Kashmir</h4>
+      </div>
+      <div class="pop-box">
+        <img src="./images/naran.jpg" width="500" height="600">
+        <h6>Naran</h6>
+        <h4>Popular in Kaghan Valley</h4>
+      </div>
+      <div class="pop-box">
+        <img src="./images/hunza.jpg" width="500" height="600">
+        <h6>Hunza Valley</h6>
+        <h4> Near the China border</h4>
+      </div>
+
+    </div>
+    <div class="pop-tour-content">
+      <div class="pop-box">
+        <img src="./images/chitrl.jpeg" width="500" height="600">
+        <h6>Chitral</h6>
+        <h4>Paradise of Kashmir</h4>
+      </div>
+      <div class="pop-box">
+        <img src="./images/sakrdu.jpeg" width="500" height="600">
+        <h6>Sakrdu</h6>
+        <h4>Popular in Kaghan Valley</h4>
+      </div>
+      <div class="pop-box">
+        <img src="./images//swat-valley-1.jpg" width="500" height="600">
+        <h6>Sawat</h6>
+        <h4> Near the China border</h4>
+      </div>
+
+    </div>
+    <div class="pop-tour-content">
+      <div class="pop-box">
+        <img src="./images/mushkpuri-top-4687740.jpg" width="500" height="600">
+        <h6>Murree</h6>
+        <h4>Paradise of Kashmir</h4>
+      </div>
+      <div class="pop-box">
+        <img src="./images/kalam.jpg" width="500" height="600">
+        <h6>Kalam Valley</h6>
+        <h4>Popular in Kaghan Valley</h4>
+      </div>
+      <div class="pop-box">
+        <img src="./images/fairy.jpeg" width="500" height="600">
+        <h6>Fairy Medows</h6>
+        <h4> Near the China border</h4>
+      </div>
+
+    </div>    
+
+    <div class="center-btn">
+      <a href="" class="btn">See Tours</a>
+    </div>
+  </section>
+
+  <!-- popular section ends  -->
+
+  <!-- pricing section starts  -->
+
+  <section class="pricing">
+
+    <h1 class="heading">our pricing</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>basic plan</h3>
+        <div class="price">$250/-</div>
+        <div class="list">
+          <p> <i class="fas fa-check"></i> photography</p>
+          <p> <i class="fas fa-check"></i> 4C's Transport</p>
+          <p> <i class="fas fa-check"></i> Meal & Drinks</p>
+          <p> <i class="fas fa-check"></i> Refreshment</p>
+          <p> <i class="fas fa-check"></i> Tour Guideline</p>
+        </div>
+        <a href="contact.php" class="btn">choose plan</a>
+      </div>
+
+      <div class="box">
+        <h3>premium plan</h3>
+        <div class="price">$650/-</div>
+        <div class="list">
+          <p> <i class="fas fa-check"></i> photography</p>
+          <p> <i class="fas fa-check"></i> Drinks</p>
+          <p> <i class="fas fa-check"></i> Tour Guideline</p>
+          <p> <i class="fas fa-check"></i> Food</p>
+          <p> <i class="fas fa-check"></i> 4C Transport</p>
+        </div>
+        <a href="contact.php" class="btn">choose plan</a>
+      </div>
+
+      <div class="box">
+        <h3>ultimate plan</h3>
+        <div class="price">$1250/-</div>
+        <div class="list">
+          <p> <i class="fas fa-check"></i> photography</p>
+          <p> <i class="fas fa-check"></i> Music System</p>
+          <p> <i class="fas fa-check"></i> Residence</p>
+          <p> <i class="fas fa-check"></i> meals & drinks</p>
+          <p> <i class="fas fa-check"></i> 4C Transport</p>
+          <p> <i class="fas fa-check"></i> Tour Guideline</p>
+        </div>
+        <a href="contact.php" class="btn">choose plan</a>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- footr section start -->
+
+  <section class="footer">
+
+    <div class="footer-box">
+      <h3>About</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quisquam numquam adipisci maxime officia facere natus tempora rem. Vitae id, officia delectus obcaecati odio reiciendis quasi veritatis rem voluptatem quo ratione mollitia, adipisci deserunt.</p>
+    </div>
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="">Our story</a>
+      <a href="">Our benefits</a>
+      <a href="">Team</a>
+      <a href="">careers</a>
+    </div>
+    <div class="footer-box">
+      <h3>Help</h3>
+      <a href="#">FAQs</a>
+      <a href="contact.html">contact us</a>
+    </div>
+    <div class="footer-box">
+      <h3>social</h3>
+      <div class="social">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- copyrights -->
+  <div class="copyri8">
+    <div class="footer-logo">
+      <img src="logo.png" alt="downtown-logo" width=80 height=80>
+      <p>© 2023 Designed by CodeCraphter Developers. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

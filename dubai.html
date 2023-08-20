@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai </title>
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ruwudu:wght@500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+  /* =========== navbar ========= */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+  body {
+    line-height: 1.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  #main {
+    width: 100%;
+    height: 100vh;
+
+
+  }
+
+  nav {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    /* opacity: 0.5; */
+    line-height: 80px;
+
+  }
+
+  nav ul {
+    float: right;
+    margin-right: 40px;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: #000;
+
+
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    opacity: 100%;
+    font-size: 15px;
+    padding: 30px;
+    font-weight: bold;
+
+  }
+
+  nav ul li :hover {
+    background-color: rgb(65, 82, 99);
+  }
+
+  .curved {
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(./images/dubai.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    width: 100vw;
+    height: 70vh;
+    margin-top: -836px;
+
+  }
+
+  .curved h2 {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    top: 200px;
+    left: -610px;
+
+  }
+
+  .curved svg {
+    display: block;
+    position: relative;
+    top: 220px;
+  }
+
+  /* thailand package */
+  .pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+    gap: 5.5rem;
+    position: relative;
+    top: 122px;
+    left: 400px;
+    width: 59%;
+
+    align-content: center;
+  }
+
+
+  .pricing .box-container .box {
+    text-align: center;
+    border-radius: .5rem;
+    background: #0edb96;
+    box-shadow: #73bfd1;
+    padding: 2rem;
+  }
+
+  .pricing .box-container .box h2 {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .pricing .box-container .box h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  .pricing .box-container .box h5 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+  }
+
+  .pricing .box-container .box .price {
+    padding: 1rem;
+    border-radius: 35px;
+    background: #000;
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .pricing .box-container .box p {
+    color: #fff;
+  }
+
+  .pricing .box-container .box .list p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: left;
+    padding: 2rem 0;
+  }
+
+  .pricing .box-container .box .list p i {
+    padding-right: .5rem;
+    color: #fff;
+  }
+
+  .pricing .heading {
+    color: #000;
+    font-size: 41px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    top: 20px;
+
+  }
+
+  .pricing {
+    /* background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(./images/tour); */
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    top: 23px;
+  }
+  /* requiremnts section start */
+  .requirement{
+    width: 50%;
+    height: 50vh;
+    position: relative;
+    top: 250px;
+    left: 50px;
+  
+  }
+  .requiremnt-box h1{
+    color: black;
+    font-size: 900;
+    font-weight: bold;
+  }
+  .requiremnt-box p{
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+  
+  .requiremnt-box p i{
+    padding-right: .5rem;
+    color: #072239;
+  }
+ /* call back section start */
+ .call-back{
+  position: relative;
+  top: 350px;
+  left: 100px;
+  text-align: left;
+ }
+ .call-back h3{
+font-size: 40px;
+font-weight: 600;
+color: #072239;
+ }
+ .call-back p{
+  font-size: 20px;
+  padding: 5px;
+ }
+ .call-back .btn{
+  
+    text-align: center; 
+    /* align-items: center; */
+    display: inline-block;
+    padding: 1rem 7rem;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+    background-color: #023241;
+    position: relative;
+    top: 23px;
+    left: 48px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+
+  }
+
+  .btn:hover {
+    background: #000000;
+    color: white;
+  }
+
+  .footer {
+    display: grid;
+    background: #1d1b1b;
+    position: relative;
+    top: 450px;
+    height: 60vh;
+    grid-template-columns: repeat(auto-fit, minmax(239px, auto));
+    gap: 2rem;
+  }
+
+  .footer-box {
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    padding: 32px 13px;
+  }
+
+  .footer-box h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .footer-box p {
+    width: 50%;
+    color: #fff;
+  }
+
+  .footer-box a {
+    color: #000;
+    margin-bottom: 0.8rem;
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all .50s ease;
+  }
+
+  .footer-box a:hover {
+    transform: translateX(5px);
+    color: rgb(231, 157, 8);
+  }
+
+  .social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: #023241;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: transform 0.6s;
+
+  }
+  .social a i:hover{
+    transform: translateX(5px);
+   color:  rgb(231, 157, 8);
+  }
+
+  .social a:hover {
+    transform: translateX(5px);
+    background: #023241;
+    color: #e9e4e4;
+  }
+
+  /* copyright section start */
+
+  .copyri8 {
+    position: relative;
+    top: 250px;
+    background: #1d1b1b;
+    text-align: center;
+    font-weight: 300;
+    /* background-color: #000; */
+    color: #fff;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-transform: none;
+    /* padding: 44px 1px 144px 3px; */
+    border-top: 2px dashed rgb(179, 175, 175);
+    /* margin: 45px;*/
+
+
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+
+    margin-top: -25px;
+    min-width: 215px;
+  }
+
+  .footer-logo img {
+    width: 27%;
+    height: 18vh;
+    position: relative;
+    left: -387px;
+  }
+
+  .footer-logo p {
+    margin-top: 5px;
+    position: relative;
+    top: -37px;
+    text-align: center;
+  }
+ 
+</style>
+
+<body>
+  <header>
+    <div id="main">
+      <nav>
+        <img src="logo.png" alt="" width="200" height="95">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visa.html">Visa</a></li>
+          <li><a href="umrah.html">Umrah</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="curved">
+      <h2>Dubai</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 289">
+        <path fill="#FFF" fill-opacity="1"
+          d="M0,160L60,181.3C120,203,240,245,360,250.7C480,256,600,224,720,181.3C840,139,960,85,1080,80C1200,75,1320,117,1380,138.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- packages -->
+  <section class="pricing">
+
+    <h1 class="heading">Packages</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <h2>30 Days</h2>
+        <h3>Dubai  Visa Visit</h3>
+        <h5>For Single Entry</h5>
+        <div class="price">PKR 16500/-</div>
+        <h5>Includes</h5>
+        <div class="list">
+          <p> <i class="fa-solid fa-circle-check"></i>Dubai  imigration fees</p>
+          <p> <i class="fa-solid fa-circle-check"></i>Visa Service charges</p>
+          <p> <i class="fa-solid fa-circle-check"></i>All tax</p>
+          <p> <i class="fa-solid fa-circle-check"></i> Tour Visa</p>
+          <p> <i class="fa-solid fa-circle-check"></i> 30 days duration of stay in Dubai </p>
+          <p> <i class="fa-solid fa-circle-check"></i> 8 to 10 working days Visa processing Time</p>
+        </div>
+
+      </div>
+
+      <div class="box">
+        <h2>90 Days</h2>
+        <h3>Dubai Visa Visit</h3>
+        <h5>For Single Entry</h5>
+
+        <div class="price">PKR 35500/-</div>
+        <h5>Includes</h5>
+        <div class="list">
+          <p> <i class="fa-solid fa-circle-check"></i>Dubai imigration fees</p>
+          <p> <i class="fa-solid fa-circle-check"></i>Visa Service charges</p>
+          <p> <i class="fa-solid fa-circle-check"></i>All tax</p>
+          <p> <i class="fa-solid fa-circle-check"></i> Tour Visa</p>
+          <p> <i class="fa-solid fa-circle-check"></i> 30 days duration of stay in Dubai </p>
+          <p> <i class="fa-solid fa-circle-check"></i> 8 to 10 working days Visa processing Time</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- package section Ends -->
+  <!-- requirement section start -->
+  <section class=" requirement">
+    <div class="requiremnt-box">
+      <h1> Dubai Visit Visa Requirments</h1>
+       <p> <i class="fa-solid fa-circle-dot"></i>Six Months Bank Statement</p>
+          <p> <i class="fa-solid fa-circle-dot"></i>Account Maintenance Certificate</p>
+          <p> <i class="fa-solid fa-circle-dot"></i>Business Covering Letter Pad</p>
+          <p> <i class="fa-solid fa-circle-dot"></i>N.T.N Number</p>
+          <p> <i class="fa-solid fa-circle-dot"></i>Hotel Booking</p>
+          <p> <i class="fa-solid fa-circle-dot"></i>Return Air Ticket</p>          
+          <p> <i class="fa-solid fa-circle-dot"></i>Original Pakistani Passport ( Old Passport is required if any )</p>          
+          <p> <i class="fa-solid fa-circle-dot"></i>Four Pictures</p>          
+          <p> <i class="fa-solid fa-circle-dot"></i>C.N.I.C Photo Copy</p>          
+          <p> <i class="fa-solid fa-circle-dot"></i>FRC Family Registration Certificate ( if Applying with Family  for Individual no need FRC )</p>          
+
+    </div>
+  </section>
+  <div class="call-back">
+    <h3>Request a call back</h3>
+    <p>If you have any query then click here!!</p>
+    <a href="contact.html" class="btn">contact Us</a>
+  </div>
+
+  <section class="footer">
+
+    <div class="footer-box">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quisquam numquam adipisci maxime officia
+        facere natus tempora rem. Vitae id, officia delectus obcaecati odio reiciendis quasi veritatis rem voluptatem
+        quo ratione mollitia, adipisci deserunt.</p>
+    </div>
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="thailand.html">Thailand</a>
+      <a href="singapore.html">singapore</a>
+      <a href="mala.html">Malashiya </a>
+      <a href="combodia.html">Combodia</a>      
+      <a href="pak.html">Pakistan</a>      
+      <a href="turkey.html">Turkey</a>      
+
+    </div>
+    <div class="footer-box">
+      <h3>Help</h3>
+      <a href="#">FAQs</a>
+      <a href="contact.html">contact us</a>
+    </div>
+    <div class="footer-box">
+      <h3>social</h3>
+      <div class="social">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+  </section>
+   <!-- copyrights -->
+   <div class="copyri8">
+    <div class="footer-logo">
+      <img src="logo.png" alt="downtown-logo" width=80 height=80>
+      <p>© 2023 Designed by CodeCraphter Developers. All rights reserved.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

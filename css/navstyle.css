@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruwudu:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ruwudu', serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  line-height: 1.5s;
+  font-family: 'Ruwudu', serif;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* display: flex; */
+
+}
+
+/* home section logo container  */
+#main {
+  width: 100%;
+  height: 100vh;
+ background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(../images/islam-6531914.jpg) ;
+  background-size: cover;
+  /* position: absolute; */
+  background-position: center;
+}
+
+
+.btn {
+  border: 2px solid #e1e6e7;
+  display: inline-block;
+  padding: 1rem 7rem;
+  font-size: 19px;
+  margin-top: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #023241;
+  border: none;
+}
+
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  /* opacity: 0.5; */
+  line-height: 70px;
+}
+
+
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  color: #000;
+
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  opacity: 100%;
+  font-size: 15px;
+  padding: 30px;
+  font-weight: bold;
+
+}
+
+nav ul li :hover {
+  background-color: rgb(65, 82, 99);
+}
+
+.home {
+  min-height: 65vh;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+ 
+}
+.home .contnt {
+  text-align: center;
+
+}
+.home .contnt h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+
+}
+
+.home .contnt p {
+  font-size: 20px;
+  padding: 1rem 0;
+  color: #fff;
+
+}
+
+.container1 {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  top: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  background: rgb(0, 0, 0);
+}
+
+
+.container1 h2 {
+  font-weight: bold;
+  padding-top: 4%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  margin-bottom: 34px;
+  font-size: 28px;
+}
+
+.container1 p {
+  font-size: 13px;
+  color: white;
+
+}
+/* slider section strat */
+.services {
+  font-weight: bold;
+  padding-top: 2%;
+  align-items: center;
+  height: 16vh;
+  width: 23%;
+  margin-bottom: 60px;
+  font-size: large;
+}
+
+.row {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border: transparent;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.service h3 {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.service p {
+  color: rgb(5, 33, 62);
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.service:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.service:hover i {
+  color: #fff;
+}
+
+.service a {
+  height: 20px;
+}
+/* slider section end */
+
+/* footer section start */
+
+    .footer {
+      display: grid;
+      background: #1d1b1b;
+      position: relative;
+      top: 698px;
+      height: 60vh;
+      grid-template-columns: repeat(auto-fit, minmax(239px, auto));
+      gap: 2rem;
+    }
+  
+    .footer-box {
+      display: flex;
+      margin-left: 30px;
+      flex-direction: column;
+      padding: 32px 13px;
+    }
+  
+    .footer-box h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+  
+    .footer-box p {
+      width: 50%;
+      color: #fff;
+    }
+  
+    .footer-box a {
+      color: #000;
+      margin-bottom: 0.8rem;
+      font-size: 19px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+      transition: all .50s ease;
+    }
+  
+    .footer-box a:hover {
+      transform: translateX(5px);
+      color: rgb(231, 157, 8);
+    }
+  
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      width: 45px;
+      background: #023241;
+      color: #fff;
+      border-radius: 50%;
+      margin-right: 8px;
+      transition: transform 0.6s;
+  
+    }
+  
+    .social a:hover {
+      transform: translateX(5px);
+      background: #023241;
+      color: #e9e4e4;
+    }
+    .social a i:hover {
+      transform: translateX(5px);
+      color: rgb(231, 157, 8);
+    }
+  
+    /* copyright section start */
+  
+    .copyri8 {
+      position: relative;
+      top: 650px;
+      background: #1d1b1b;
+      text-align: center;
+      font-weight: 300;
+      /* background-color: #000; */
+      color: #fff;
+      font-size: 17px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-transform: none;
+      /* padding: 44px 1px 144px 3px; */
+      border-top: 2px dashed rgb(179, 175, 175);
+      /* margin: 45px;*/
+  
+  
+    }
+  
+    .footer-logo {
+      font-size: 1.5rem;
+  
+      margin-top: -25px;
+      min-width: 215px;
+    }
+  
+    .footer-logo img {
+      width: 27%;
+      height: 18vh;
+      position: relative;
+      left: -387px;
+    }
+  
+    .footer-logo p {
+      margin-top: 5px;
+      position: relative;
+      top: -37px;
+      text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .footer-first-section {
+    padding: 50px 50px;
+  }
+
+  .footer-first-div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-first-div>div {
+    margin-bottom: 50px;
+  }
+
+  form>div {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  form>div>input {
+    width: 75%;
+    text-align: center;
+  }
+
+  button {
+    height: 35px;
+    margin-left: 0;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-second-section {
+    gap: 2rem;
+    padding: 30px 50px;
+  }
+
+}

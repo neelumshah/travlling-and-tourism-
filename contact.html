@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+      <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),  url(./images/las-vegas-1846684.jpg) no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+    width: 100%;
+}
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+.btn {
+    border: 2px solid #e1e6e7;
+    display: inline-block;
+    padding: 1rem 7rem;
+    font-size: 19px;
+    margin-top: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #023241;
+    /* border: none; */
+
+}
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    /* opacity: 0.5; */
+    line-height: 80px;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: #000;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    opacity: 100%;
+    font-size: 15px;
+    padding: 30px;
+    font-weight: bold;
+
+}
+
+nav ul li :hover {
+    background-color: rgb(65, 82, 99);
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -759px;
+
+}
+
+.contact.navbar {
+    /* max-width: 1900px; */
+    margin: auto;
+    width: 100%;
+    line-height: 10px;
+}
+
+.navbar ul {
+    float: right;
+    text-align: center;
+    /* margin-right: 17%; */
+    gap: 20%;
+    
+}
+
+.contact .navbar ul li {
+    display: inline-block;
+    margin-top: 1px;
+
+}
+.contact .content{
+    max-width: 700px;
+    /* margin-top: -84px; */
+    margin-bottom: 4px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 46px;
+    margin-top: 15%;
+    font-weight: 700;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    /* margin-top: 30px; */
+}
+.container .contactInfo{
+    width: 60%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 55px;
+    background-color: #023241;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36%;
+    font-size: 25px;
+}
+
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 800;
+    color: white;
+}
+.contactform{
+    width: 66%;
+    padding: 37px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+.contactform  .inputBox{
+position: relative;
+width: 100%;
+margin-top: 10px;
+
+}
+.contactform  .inputBox input,
+.contactform  .inputBox textarea{
+
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    resize: none;
+}
+.contactform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #000000;
+}
+.contactform .inputBox input:focus ~span,
+.contactform .inputBox input:valid ~span,
+.contactform .inputBox textarea:focus ~span,
+.contactform .inputBox textarea ~span
+{
+    
+color: #000000;
+font-size: 12px;
+transform: translateY(-20px);
+}
+
+.contactform .inputBox input[type="submit"]{
+    width: 100px;
+    background: #023241;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media(max-width: 991px){
+    .contact{
+        padding: 50px;
+    
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,.contactform{
+        width: 100%;
+    }
+}
+
+
+.footer {
+      display: grid;
+      background: #1d1b1b;
+      position: relative;
+      top: 349px;
+      height: 60vh;
+      grid-template-columns: repeat(auto-fit, minmax(239px, auto));
+      gap: 2rem;
+    }
+  
+    .footer-box {
+      display: flex;
+      margin-left: 30px;
+      flex-direction: column;
+      padding: 32px 13px;
+    }
+  
+    .footer-box h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+  
+    .footer-box p {
+      width: 50%;
+      color: #fff;
+    }
+  
+    .footer-box a {
+      color: #000;
+      margin-bottom: 0.8rem;
+      font-size: 19px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+      transition: all .50s ease;
+    }
+  
+    .footer-box a:hover {
+      transform: translateX(5px);
+      color: rgb(231, 157, 8);
+    }
+  
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      width: 45px;
+      background: #023241;
+      color: #fff;
+      border-radius: 50%;
+      margin-right: 8px;
+      transition: transform 0.6s;
+  
+    }
+  
+    .social a:hover {
+      transform: translateX(5px);
+      background: #023241;
+      color: #e9e4e4;
+    }
+    .social a i:hover {
+      transform: translateX(5px);
+      color: rgb(231, 157, 8);
+    }
+  
+    /* copyright section start */
+  
+    .copyri8 {
+      position: relative;
+      top: 150px;
+      background: #1d1b1b;
+      text-align: center;
+      font-weight: 300;
+      /* background-color: #000; */
+      color: #fff;
+      font-size: 17px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-transform: none;
+      /* padding: 44px 1px 144px 3px; */
+      border-top: 2px dashed rgb(179, 175, 175);
+      /* margin: 45px;*/
+  
+  
+    }
+  
+    .footer-logo {
+      font-size: 1.5rem;
+  
+      margin-top: -25px;
+      min-width: 215px;
+    }
+  
+    .footer-logo img {
+      width: 27%;
+      height: 18vh;
+      position: relative;
+      left: -387px;
+    }
+  
+    .footer-logo p {
+      margin-top: 5px;
+      position: relative;
+      top: -37px;
+      text-align: center;
+    }
+
+
+
+
+</style>
+<body>
+    <header>
+        <div id="main">
+            <nav>
+                <img src="logo.png" alt="" width= "200" height="95">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="visa.html">Visa</a></li>
+                    <li><a href="umrah.html">Umrah</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, a optio quasi eligendi repellat quibusdam doloribus, aut iure blanditiis, natus labore temporibus. Dignissimos dolores aut quis beatae accusamus! Molestiae commodi alias repellendus perferendis distinctio optio fugiat dicta, facere sequi, hic aspernatur inventore nihil assumenda quae expedita suscipit aut doloribus at tenetur soluta earum iure. Similique mollitia assumenda, eveniet, quia minima accusantium fugit ullam dicta dignissimos asperiores ut.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Office # 21, 3rd floor Royal Plaza, 6th road, <br> Satellite Town, Rawalpindi</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>downtowntravel786@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>0300-6931490</p>
+                        <p>031-111-786-63</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form >
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                       <input type="submit" value="send" class="btn">
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+      
+    <section class="footer">
+
+        <div class="footer-box">
+          <h3>About</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quisquam numquam adipisci maxime officia
+            facere natus tempora rem. Vitae id, officia delectus obcaecati odio reiciendis quasi veritatis rem voluptatem
+            quo ratione mollitia, adipisci deserunt.</p>
+        </div>
+       
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="visa.html">Visa</a>
+          <a href="tour.html">Tour</a>
+          <a href="about.html">About</a>      
+          <a href="contact.html">Contact</a>      
+        
+    
+        </div>
+        <div class="footer-box">
+          <h3>Help</h3>
+          <a href="#">FAQs</a>
+          <a href="contact.html">contact us</a>
+        </div>
+        <div class="footer-box">
+          <h3>social</h3>
+          <div class="social">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+    
+      </section>
+       <!-- copyrights -->
+       <div class="copyri8">
+        <div class="footer-logo">
+          <img src="logo.png" alt="downtown-logo" width=80 height=80>
+          <p>© 2023 Designed by CodeCraphter Developers. All rights reserved.</p>
+        </div>
+      </div>
+    </body>
+</body>
+</html>
